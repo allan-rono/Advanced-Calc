@@ -2,7 +2,7 @@ const display = document.getElementById("display");
 const AC = document.getElementById("AC")
 const percent = document.getElementById("%")
 const divide = document.getElementById("/")
-const seven = document.getElementById("7").textContent
+const seven = document.getElementById("7");
 const eight = document.getElementById("8")
 const nine = document.getElementById("9")
 const multiply = document.getElementById("X")
@@ -22,6 +22,7 @@ function calculator(){
     
 }
 
-seven.addEventListener("click", function () {
-    display.innerHTML = 
+equal.addEventListener("click", function () {
+    display.innerHTML = parseFloat(seven.value);
 })
+
